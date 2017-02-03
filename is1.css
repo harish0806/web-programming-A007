@@ -1,7 +1,7 @@
 <style>
        
         h3{
-          text-align: center;
+          text-align: center; !important
         }
         table,td{
         border: 1px solid black;
