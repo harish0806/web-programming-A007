@@ -2,7 +2,7 @@
         body{
           background-image: url("tsunami-clipart-tsunami.jpg");
           background-size: cover;
-          
+          background-attachment: fixed;
         }
         h1{
           color: purple;
