@@ -1,18 +1,20 @@
 <style>
-       
-        h3{
-          text-align: center; !important
-        }
-        table,td{
+  table,td{
         border: 1px solid black;
         }
-h1{
-          color: indigo;
-          text-align: center;
-        }
-        body{
+       body{
           background: url("https://roronoaharish.github.io/web-programming-A007/Panari-Island-Okinawa-Japan-e1427234649164.jpg");
           background-size: cover;    
         }
+
+        h1{
+          color: indigo;
+          text-align: center;
+        }
+        h3{
+          text-align: center; !important
+        }
+      
+        
       </style>
 
