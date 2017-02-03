@@ -1,18 +1,18 @@
 <style>
-        body{
-          background: url("https://roronoaharish.github.io/web-programming-A007/Panari-Island-Okinawa-Japan-e1427234649164.jpg");
-          background-size: cover;
-                
-        }
-      /*  h1{
+       h1{
           color: indigo;
           text-align: center;
-        }*/
+        }
         h3{
           text-align: center;
         }
         table,td{
         border: 1px solid black;
+        }
+
+        body{
+          background: url("https://roronoaharish.github.io/web-programming-A007/Panari-Island-Okinawa-Japan-e1427234649164.jpg");
+          background-size: cover;    
         }
       </style>
 
