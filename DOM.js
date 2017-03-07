@@ -8,19 +8,23 @@ function sayHello () {
     .getElementById("content")
     .innerHTML = message;
 
-  if (name === "student") {
+  if (name === "B.tech-I.T") {
     var title = 
       document
         .querySelector("#title")
         .textContent;
-    title += " & Lovin' it!";
+    title += " & Batch A1!";
     document
         .querySelector("h1")
         .textContent = title;
   }
   else {
-    document
+    var title = 
+      document
         .querySelector("#title")
         .textContent;
+      document
+        .querySelector("h1")
+        .textContent = title;
   }
 }
