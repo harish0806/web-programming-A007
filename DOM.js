@@ -1,5 +1,6 @@
+var cnt= 0;
 function sayHello () {
-  var cnt= 0;
+  
   var name =
    document.getElementById("name").value;
    var message = "<h2>Details: " + name + "!</h2>";
@@ -17,7 +18,7 @@ function sayHello () {
     if(cnt==0)
     {
     title +=" & Batch A1!";
-      cnt+=cnt;
+      cnt++;
     }
     document
         .querySelector("h1")
@@ -25,10 +26,7 @@ function sayHello () {
   }
   else {
     cnt=0;
-    var title = 
-      document
-        .querySelector("#title")
-        .textContent;
+    var title = "A007"
       document
         .querySelector("h1")
         .textContent = title;
