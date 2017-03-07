@@ -18,4 +18,9 @@ function sayHello () {
         .querySelector("h1")
         .textContent = title;
   }
+  else {
+    document
+        .querySelector("#title")
+        .textContent;
+  }
 }
