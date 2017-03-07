@@ -1,14 +1,14 @@
 function sayHello () {
   var name =
    document.getElementById("name").value;
-   var message = "<h2>Hello " + name + "!</h2>";
+   var message = "<h2>Details: " + name + "!</h2>";
 
 
   document
     .getElementById("content")
     .innerHTML = message;
 
-  if (name === "B.tech-I.T") {
+  if (name === "btech it") {
     var title = 
       document
         .querySelector("#title")
