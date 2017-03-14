@@ -1,1 +1,6 @@
-Harish Chetty
+{
+  "firstName": "Harish",
+  "lastName": "Chetty",
+  "likesChineseFood": true,
+  "numberOfDisplays": 2 
+}
