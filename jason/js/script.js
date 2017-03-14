@@ -10,17 +10,16 @@ document.addEventListener("DOMContentLoaded",
         $ajaxUtils
           .sendGetRequest("data/name.json", 
             function (res) {
-              var message = 
+              var message = "Addition of :"
                 res.firstName + " " + res.lastName
-              if (res.likesChineseFood) {
-                message += " likes Chinese food";
+              if (res.addition) {
+              var message1 = res.firstName+res.lastName;
+                message += " = " res.message1;
               }
               else {
-                message += " doesn't like Chinese food";
+                message += " not found!";
               }
-              message += " and uses ";
-              message += res.numberOfDisplays + 1;
-              message += " displays for coding.";
+              
 
               document.querySelector("#content")
                 .innerHTML = "<h2>" + message + "</h2>";
