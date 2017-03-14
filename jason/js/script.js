@@ -10,12 +10,13 @@ document.addEventListener("DOMContentLoaded",
         $ajaxUtils
           .sendGetRequest("data/name.json", 
             function (res) {
-           var message1 = res.firstName+res.lastName;
               var message = "Addition of :"
-                res.firstName + " " + res.lastName
+                res.firstName + "and" + res.lastName +"is";
+          
+           var message1 = res.firstName+res.lastName;
               if (res.addition) {
              
-                message += " = " message1;
+                message +=  message1;
               }
               else {
                 message += " not found!";
