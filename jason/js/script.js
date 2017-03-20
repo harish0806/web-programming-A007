@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded",
           .sendGetRequest("data/name.json", 
             function (res) {
               var message = "Addition of :";
-                 message +=  res.firstName + "and" + res.lastName +"is";       
+                 message +=  res.firstName + " and " + res.lastName +" is ";       
            var message1 = res.firstName+res.lastName;
               if (res.addition) {
              
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded",
           .sendGetRequest("data/name.json", 
             function (res) {
               var message = "Subtraction of :";
-                 message +=  res.firstName + "and" + res.lastName +"is";       
+                 message +=  res.firstName + " and " + res.lastName +" is ";       
            var message1 = res.firstName-res.lastName;
               if (res.addition) {
              
