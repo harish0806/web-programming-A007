@@ -49,5 +49,51 @@ document.addEventListener("DOMContentLoaded",
                 .innerHTML = "<h2>" + message + "</h2>";
             });
       });
+  document.querySelector("#button3")
+      .addEventListener("click", function () {
+        
+        // Call server to get the name
+        $ajaxUtils
+          .sendGetRequest("data/name.json", 
+            function (res) {
+              var message = "Multiplication of ";
+                 message +=  res.firstName + " and " + res.lastName +" is ";       
+           var message1 = res.firstName*res.lastName;
+              if (res.addition) {
+             
+                message +=  message1;
+              }
+              else {
+                message += " not found!";
+              }
+              
+
+              document.querySelector("#content")
+                .innerHTML = "<h2>" + message + "</h2>";
+            });
+      });
+  document.querySelector("#button4")
+      .addEventListener("click", function () {
+        
+        // Call server to get the name
+        $ajaxUtils
+          .sendGetRequest("data/name.json", 
+            function (res) {
+              var message = "division of ";
+                 message +=  res.firstName + " and " + res.lastName +" is ";       
+           var message1 = res.firstName/res.lastName;
+              if (res.addition) {
+             
+                message +=  message1;
+              }
+              else {
+                message += " not found!";
+              }
+              
+
+              document.querySelector("#content")
+                .innerHTML = "<h2>" + message + "</h2>";
+            });
+      });
   }
 );
