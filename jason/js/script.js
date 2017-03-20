@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded",
         $ajaxUtils
           .sendGetRequest("data/name.json", 
             function (res) {
-              var message = "Addition of :";
+              var message = "Addition of ";
                  message +=  res.firstName + " and " + res.lastName +" is ";       
            var message1 = res.firstName+res.lastName;
               if (res.addition) {
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded",
         $ajaxUtils
           .sendGetRequest("data/name.json", 
             function (res) {
-              var message = "Subtraction of :";
+              var message = "Subtraction of ";
                  message +=  res.firstName + " and " + res.lastName +" is ";       
            var message1 = res.firstName-res.lastName;
               if (res.addition) {
