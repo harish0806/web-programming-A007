@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded",
 
               document.querySelector("#content")
                 .innerHTML = "<h2>" + temp2+ "</h2>";
-          document.querySelector("#content")
+          document.querySelector("#content1")
                 .innerHTML = "<h2>" + temp1+ "</h2>";
             });
       });
