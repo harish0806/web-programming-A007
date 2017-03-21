@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded",
                 temp= res.course1+": "+res.marks11;
                 var temp1= res.course2+": "+res.marks12;
               }
-              else if (temp === "student2" {
+              else if (temp === "student2") {
                 temp= res.course1+": "+res.marks21;
                 var temp1= res.course2+": "+res.marks22;
               }
