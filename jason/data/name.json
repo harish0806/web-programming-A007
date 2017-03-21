@@ -1,6 +1,12 @@
 {
-  "firstName": 3,
-  "lastName": 4,
-  "addition": true
+  "course1": "mathematics",
+  "student1": "tyler",
+  "marks11": 49/70,
+  "marks12": 56/70, 
+  "marks21": 35/70,
+  "marks22": 62/70,
+  "student2": "josh",
+  "course2": "operating systems",
+ 
    
 }
