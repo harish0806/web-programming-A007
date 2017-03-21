@@ -25,7 +25,8 @@ document.addEventListener("DOMContentLoaded",
           else {
             var temp1 = "no such student";
           }
-              
+              document.querySelector("#content")
+                .innerHTML = "<h2>" + temp+ "</h2>";
 
               document.querySelector("#content")
                 .innerHTML = "<h2>" + temp2+ "</h2>";
