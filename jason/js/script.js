@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded",
             function (res) {
               var temp =
    document.getElementById("name").value;
+          console.log(temp);
                  
               if ( temp === res.student1) {
              
