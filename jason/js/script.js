@@ -3,97 +3,33 @@ document.addEventListener("DOMContentLoaded",
   function (event) {
     
     // Unobtrusive event binding
-    document.querySelector("#button1")
+    document.querySelector("button")
       .addEventListener("click", function () {
         
         // Call server to get the name
         $ajaxUtils
           .sendGetRequest("data/name.json", 
             function (res) {
-              var message = "Addition of ";
-                 message +=  res.firstName + " and " + res.lastName +" is ";       
-           var message1 = res.firstName+res.lastName;
-              if (res.addition) {
+              var temp =
+   document.getElementById("name").value;
+                 
+              if ( temp === "student1") {
              
-                message +=  message1;
+                temp= res.course1+": "+res.marks11;
+                var temp1= res.course2+": "+res.marks12;
               }
-              else {
-                message += " not found!";
+              else if (temp === "student2" {
+                temp= res.course1+": "+res.marks21;
+                var temp1= res.course2+": "+res.marks22;
               }
               
 
               document.querySelector("#content")
-                .innerHTML = "<h2>" + message + "</h2>";
+                .innerHTML = "<h2>" + temp+ "</h2>";
+          document.querySelector("#content")
+                .innerHTML = "<h2>" + temp1+ "</h2>";
             });
       });
-  document.querySelector("#button2")
-      .addEventListener("click", function () {
-        
-        // Call server to get the name
-        $ajaxUtils
-          .sendGetRequest("data/name.json", 
-            function (res) {
-              var message = "Subtraction of ";
-                 message +=  res.firstName + " and " + res.lastName +" is ";       
-           var message1 = res.firstName-res.lastName;
-              if (res.addition) {
-             
-                message +=  message1;
-              }
-              else {
-                message += " not found!";
-              }
-              
-
-              document.querySelector("#content")
-                .innerHTML = "<h2>" + message + "</h2>";
-            });
-      });
-  document.querySelector("#button3")
-      .addEventListener("click", function () {
-        
-        // Call server to get the name
-        $ajaxUtils
-          .sendGetRequest("data/name.json", 
-            function (res) {
-              var message = "Multiplication of ";
-                 message +=  res.firstName + " and " + res.lastName +" is ";       
-           var message1 = res.firstName*res.lastName;
-              if (res.addition) {
-             
-                message +=  message1;
-              }
-              else {
-                message += " not found!";
-              }
-              
-
-              document.querySelector("#content")
-                .innerHTML = "<h2>" + message + "</h2>";
-            });
-      });
-  document.querySelector("#button4")
-      .addEventListener("click", function () {
-        
-        // Call server to get the name
-        $ajaxUtils
-          .sendGetRequest("data/name.json", 
-            function (res) {
-              var message = "division of ";
-                 message +=  res.firstName + " and " + res.lastName +" is ";       
-           var message1 = res.firstName/res.lastName;
-              if (res.addition) {
-             
-                message +=  message1;
-              }
-              else {
-                message += " not found!";
-              }
-              
-
-              document.querySelector("#content")
-                .innerHTML = "<h2>" + message + "</h2>";
-            });
-      });
+  
   }
 );
