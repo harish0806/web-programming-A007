@@ -30,10 +30,15 @@ document.addEventListener("DOMContentLoaded",
 
               document.querySelector("#content")
                 .innerHTML = "<h2>" + temp2+ "</h2>";
+        }
+                          });
                  var temp1 =
    document.getElementById("tr").value;
            function say(event){
       this.textContent="Submit";
+           }
+          document.querySelector("button")
+      .addEventListener("click", say ());
              document.querySelector("button")
       .addEventListener("click", function () {
         
@@ -42,9 +47,6 @@ document.addEventListener("DOMContentLoaded",
           .sendGetRequest("data/name.json", 
             function (res) {
          
-                 
-           function say(event){
-      this.textContent="Submit";
                 if(temp1 === res.answer1)
                 {
           document.querySelector("#content1")
@@ -54,11 +56,9 @@ document.addEventListener("DOMContentLoaded",
                 {
                  document.querySelector("#content1")
                 .innerHTML = "<h2>" + res.answer2+ "</h2>";
+                }
+        }
                 
-}
-            });
-                
-      });
-  
+});
   }
 );
