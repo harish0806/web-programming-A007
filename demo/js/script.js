@@ -1,7 +1,7 @@
 // Event handling
 document.addEventListener("DOMContentLoaded",
   function (event) {
-    
+   
     // Unobtrusive event binding
     document.querySelector("button")
       .addEventListener("click", function () {
@@ -32,6 +32,19 @@ document.addEventListener("DOMContentLoaded",
                 .innerHTML = "<h2>" + temp2+ "</h2>";
                  var temp1 =
    document.getElementById("tr").value;
+           function say(event){
+      this.textContent="Submit";
+             document.querySelector("button")
+      .addEventListener("click", function () {
+        
+        // Call server to get the name
+        $ajaxUtils
+          .sendGetRequest("data/name.json", 
+            function (res) {
+         
+                 
+           function say(event){
+      this.textContent="Submit";
                 if(temp1 === res.answer1)
                 {
           document.querySelector("#content1")
@@ -44,6 +57,7 @@ document.addEventListener("DOMContentLoaded",
                 
 }
             });
+                
       });
   
   }
