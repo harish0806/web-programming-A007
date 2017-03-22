@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded",
             function (res) {
               var temp =
    document.getElementById("name").value;
-          console.log(temp);
+         
                  
               if ( temp === res.student1) {
              
@@ -23,14 +23,15 @@ document.addEventListener("DOMContentLoaded",
                
                 var temp2= res.course2;
               }
-             var temp1 =
-   document.getElementById("tr").value;
+      
   
    
               
 
               document.querySelector("#content")
                 .innerHTML = "<h2>" + temp2+ "</h2>";
+                 var temp1 =
+   document.getElementById("tr").value;
                 if(temp1 === res.answer1)
                 {
           document.querySelector("#content1")
