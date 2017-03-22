@@ -39,26 +39,6 @@ document.addEventListener("DOMContentLoaded",
            }
           document.querySelector("button")
       .addEventListener("click", say ());
-             document.querySelector("button")
-      .addEventListener("click", function () {
-        
-        // Call server to get the name
-        $ajaxUtils
-          .sendGetRequest("data/name.json", 
-            function (res) {
-         
-                if(temp1 === res.answer1)
-                {
-          document.querySelector("#content1")
-                .innerHTML = "<h2>" + res.answer1+ "</h2>";
-                }
-                else
-                {
-                 document.querySelector("#content1")
-                .innerHTML = "<h2>" + res.answer2+ "</h2>";
-                }
-        }
-                
-});
+             
   }
 );
